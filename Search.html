@@ -4,14 +4,25 @@
     <title></title>
     <meta charset="utf-8" />
     <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="main.css" type="text/css">
 
 </head>
 
 <body>
-    <h1>Wikipedia Search</h1>
-    <input id="searchBox" type="text" />
-    <button id="search" type="submit">Search</button>
+    <div id="titleDiv" class="container">
+        <h1>Wikipedia Search</h1>
+        <img src="img/Wikipedia-logo-v2.png">
+        <input id="searchBox" type="text" />
+        <button id="search" type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <div id="aboutDiv" class="container">
+        Start typing and Wikipedia page titles will appear as suggestions.
+    </div>
+    
+    
     <div id="results"></div>
     <h2>Page Results</h2>
     <div id="player"></div>
