@@ -1,1 +1,2 @@
-# 344-assignment-4
+# CNN Article Search
+A search engine to fine articles on CNN with autocomplete suggestions taken from Wikipedia page titles. The articles are collected using a web crawler, and the Wikipedia suggestions are taken from a text file and stored in a trie data structure to reduce the time it takes to retrieve them. It also queries an AWS instance that stores NBA player stats and will display information about that player on the page if the search is the name of a player.
