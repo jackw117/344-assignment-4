@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * A class to easily keep track of how many articles are in the database.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
