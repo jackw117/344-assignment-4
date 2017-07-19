@@ -197,9 +197,9 @@ namespace WorkerRole1
                             {
                                 currentSite = "http://www.cnn.com/";
                             }
-                            else if (input.Contains("http://bleacherreport.com"))
+                            else if (input.Contains("http://bleacherreport.com/"))
                             {
-                                currentSite = "http://bleacherreport.com";
+                                currentSite = "http://bleacherreport.com/";
                             }
                             foreach (HtmlNode node in urlList)
                             {
@@ -312,9 +312,9 @@ namespace WorkerRole1
                         }
                     }
                 }
-                else if (site == "http://bleacherreport.com")
+                else if (site == "http://bleacherreport.com/")
                 {
-                    site += "/articles";
+                    site += "articles";
                     foreach (string url in bleacherBlacklist)
                     {
                         if (line.Contains(url))
