@@ -106,6 +106,7 @@ namespace WebRole1
             return errorList;
         }
 
+        //Returns the title of an article if it is in the database, and "Page not found" if not
         //
         [WebMethod]
         public string getSingleTitle(string input, string word)
