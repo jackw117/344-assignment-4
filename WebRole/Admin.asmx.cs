@@ -1,8 +1,4 @@
-﻿/*
- * A web service with methods to control the back-end features of the program.
- */
-
-using Microsoft.WindowsAzure.Storage;
+﻿using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
@@ -42,7 +38,6 @@ namespace WebRole1
         private CloudTable cpuTable;
         private static Dictionary<string, List<string>> cache = new Dictionary<string, List<string>>();
         
-        //Starts crawling articles on CNN
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public string startCrawling()
@@ -52,7 +47,6 @@ namespace WebRole1
             return "Queue has started crawling";
         }
 
-        //Stops the web crawler
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public string stopCrawling()
@@ -62,7 +56,6 @@ namespace WebRole1
             return "Queue has stopped crawling";
         }
 
-        //Clears everything stored on Azure
         [WebMethod]
         public string delete()
         {
@@ -81,7 +74,6 @@ namespace WebRole1
             return "Everything has been deleted";
         }
 
-        //Returns a list of the URLs the crawler could not process
         [WebMethod]
         public List<string> getErrors()
         {
@@ -106,8 +98,11 @@ namespace WebRole1
             return errorList;
         }
 
+<<<<<<< HEAD:Admin.asmx.cs
         //Returns the title of an article if it is in the database, and "Page not found" if not
         //
+=======
+>>>>>>> 57d4460e7885a4b0f48fdb3f9ca06e73c5efc8f0:WebRole/Admin.asmx.cs
         [WebMethod]
         public string getSingleTitle(string input, string word)
         {

@@ -1,5 +1,5 @@
 ﻿/*
- * A class to easily keep track of how many articles are in the database.
+ A class to keep track of how many articles have been crawled so far.
  */
 
 using System;
